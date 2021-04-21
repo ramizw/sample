@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.9.0 on win32)" generated="20210421 15:53:08.306" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="C:\Development\Robot\DF\Test.robot">
+<test id="s1-t1" name="Test Case Different Browsers">
+<kw name="Environment Setup" library="Env">
+<msg timestamp="20210421 15:53:08.480" level="INFO">C:\Development\Robot\DF\Browsers
+PATH value is C:\Development\Robot\DF\Browsers</msg>
+<status status="PASS" starttime="20210421 15:53:08.480" endtime="20210421 15:53:08.480"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210421 15:53:08.480" level="INFO">Opening browser 'chrome' to base url 'https://pypi.org/'.</msg>
+<status status="PASS" starttime="20210421 15:53:08.480" endtime="20210421 15:53:11.704"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BrowserFF}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210421 15:53:11.705" level="INFO">Opening browser 'firefox' to base url 'https://pypi.org/'.</msg>
+<msg timestamp="20210421 15:53:11.707" level="INFO">Firefox driver log is always forced to to: C:\Development\Robot\DF\geckodriver-2.log</msg>
+<status status="PASS" starttime="20210421 15:53:11.704" endtime="20210421 15:53:20.399"/>
+</kw>
+<status status="PASS" starttime="20210421 15:53:08.480" endtime="20210421 15:53:20.400"/>
+</test>
+<status status="PASS" starttime="20210421 15:53:08.309" endtime="20210421 15:53:20.401"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
